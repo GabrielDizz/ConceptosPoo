@@ -71,4 +71,43 @@ foreach (Employee employee in employees)
 }
 
 Console.WriteLine("                                 ==================="); 
-Console.WriteLine($"TOTAL A PAGAR:                 {$"{payroll:C2}",18}");
+Console.WriteLine($"TOTAL A PAGAR NOMINA:           {$"{payroll:C2}",18}\n\t");
+
+
+
+Invoice invoice1 = new Invoice()
+{
+    Description = "iPhone 13",
+    Id = 1,
+    Price = 5300000M,
+    Quantity = 6
+};
+
+//Console.WriteLine(invoice1);
+
+Invoice invoice2 = new Invoice()
+{
+    Description = "Samsung Galaxis 12",
+    Id = 2,
+    Price = 3300000M,
+    Quantity = 4
+};
+
+//Console.WriteLine(invoice2);
+
+ICollection<Invoice> invoices = new List<Invoice>()
+{
+    invoice1,invoice2
+};
+
+
+decimal payrollInvoice= 0;
+
+foreach (Invoice invoice in invoices)
+{
+    Console.WriteLine(invoice);
+    payrollInvoice += invoice.GetValueToPay();
+}
+
+Console.WriteLine("                              =======================");
+Console.WriteLine($"TOTAL A PAGAR FACTURAS:         {$"{payrollInvoice:C2}",18}");
