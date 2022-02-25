@@ -28,3 +28,16 @@ Employee empleado2 = new CommissionEmployee()
     CommissionPercentaje = 0.03F
 };
 Console.WriteLine(empleado2);
+
+Employee empleado3 = new HourlyEmployee()
+{
+    Id = 3010,
+    FirstName = "Baldomero Sanin",
+    LastName = "Dizzett Parra",
+    BirthDate = new Date(1945, 11, 22),
+    HiringDate = new Date(1984, 6, 10),
+    IsActive = true,
+    Hours = 240.5F,
+    HoursValue = 23456M
+};
+Console.WriteLine(empleado3);
