@@ -35,5 +35,12 @@
       <FileName>HourlyEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="ConceptosPoo.BaseCommissionEmployee">
+    <Position X="7.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAQAA=</HashCode>
+      <FileName>BaseCommissionEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
