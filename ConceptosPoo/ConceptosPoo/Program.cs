@@ -4,14 +4,27 @@ using ConceptosPoo;
 Console.WriteLine("Conceptos Poo");
 Console.WriteLine("==============");
 
-Date date1 = new Date(2024,2,29);
-Date date2 = new Date(2022,5,30);
-try
+Employee empleado1 = new SalaryEmployee()
 {
-    Console.WriteLine(date1);
-    Console.WriteLine(date2);
-}
-catch (Exception error)
+    Id = 1010,
+    FirstName = "Gabriel",
+    LastName =  "Dizzett Utria",
+    BirthDate = new Date(1973,7,29),
+    HiringDate = new Date(2000,9,11),
+    IsActive = true,
+    Salary = 2540200.00M    
+};
+Console.WriteLine(empleado1);
+
+Employee empleado2 = new CommissionEmployee()
 {
-  Console.WriteLine(error.Message);
-}
+    Id = 2010,
+    FirstName = "Berenice Cecilia",
+    LastName = "Sarmiento Avila",
+    BirthDate = new Date(1977, 11, 22),
+    HiringDate = new Date(2010, 6, 10),
+    IsActive = true,
+    Sales = 320000000M,
+    CommissionPercentaje = 0.03F
+};
+Console.WriteLine(empleado2);
